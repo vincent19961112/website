@@ -66,6 +66,47 @@
             .header-section {
                 height: 80vh;
             }
+            
+            .guller-head {
+                padding-left: 100px;
+            }
+            
+            .guller-content {
+                padding-left: 30px;
+            }
+            
+            @media screen and (max-width:991px) {
+                .row-customer {
+                    flex-direction: row-reverse;
+                }
+                .guller-head {
+                    font-size: 33px;
+                    margin-left: -77px;
+                }
+                .guller-content {
+                    font-size: 22px;
+                    margin-left: 26px;
+                }
+            }
+            
+            @media screen and (max-width: 768px) {
+                .row-customer {
+                    flex-direction: row-reverse;
+                }
+                .col-horder1 {
+                    order: 2;
+                }
+                .col-horder2 {
+                    order: 1;
+                }
+                .guller1-center {
+                    justify-content: center;
+                }
+                .guller-content {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
         </style>
 
     </head>
@@ -74,16 +115,17 @@
 
         <header class="min-vh-20">
             <div class="container-fluid pt-5 ">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 ">
-                        <h1>公司標誌</h1>
+                <div class="row  guller1-center">
+                    <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7">
+                        <h1 class="guller-head">公司標誌</h1>
                     </div>
+
                     <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 d-flex">
-                        <h3><a href="#">About</a></h3>
-                        <h3><a href="#">News</a></h3>
-                        <h3><a href="#">Service</a></h3>
-                        <h3><a href="#">Partners</a></h3>
-                        <h3><a href="#">Contact</a></h3>
+                        <h3 class="guller-content"><a href="#">About</a></h3>
+                        <h3 class="guller-content"><a href="#">News</a></h3>
+                        <h3 class="guller-content"><a href="#">Service</a></h3>
+                        <h3 class="guller-content"><a href="#">Partners</a></h3>
+                        <h3 class="guller-content"><a href="#">Contact</a></h3>
                     </div>
                     <span class="border-bottom-0"></span>
                 </div>
@@ -92,15 +134,15 @@
         <hr>
         <section class="header-section">
             <div class="container pt-5">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
+                <div class="row row-customer">
+                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 col-horder1">
                         <h2 class="text-center pt-5">About</h2>
                         <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
+                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 col-horder2">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
@@ -140,14 +182,14 @@
         <section class="min-vh-50">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-horder1" style="padding-left:0px; padding-right:0px;">
                         <h1 class="text-center pt-5">New</h1>
                         <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="padding-left:0px; padding-right:0px;">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-horder2" style="padding-left:0px; padding-right:0px;">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
@@ -231,14 +273,14 @@
     <section class="bg-dark footer-section">
     <div class="container pt-5">
       <div class="row">
-        <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
+        <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 col-horder1">
           <h2 class="text-center pt-5">Contant</h2>
-            <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+            <p class="text-center text-break mt-4 pt-3 col-horder2">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
     <div class="text-center">
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
     </div>
             </div>
-        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
+        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 ">
     <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
             </div>
         </div>
