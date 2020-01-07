@@ -7,11 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap 練習</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" href="file:///home/vincent/%E6%96%87%E4%BB%B6/index/fonticon_css/all.css">
 
-        <style>
+     <style>
             html {
                 font-size: 1rem;
             }
@@ -108,7 +109,31 @@
                 }
             }
         </style>
+<script>
+$(function(){
 
+   // 偵聽a click
+   $(".guller-content a").bind("click",function(){
+
+       var id=$(this).attr("data-id");
+
+       // 取得目標區塊的y座標
+       var target_top = $("#"+id).offset().top;
+
+       // 取得body物件 這種寫法在各瀏覽器上最保險
+       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+       // 移動捲軸無動畫效果
+     		//$body.scrollTop(target_top);
+
+       // 移動捲軸有動畫效果
+     		$body.animate({
+     			  scrollTop: target_top
+     		}, 800);
+
+   })
+})
+</script>
     </head>
 
     <body>
@@ -121,11 +146,11 @@
                     </div>
 
                     <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 d-flex">
-                        <h3 class="guller-content"><a href="#">About</a></h3>
-                        <h3 class="guller-content"><a href="#">News</a></h3>
-                        <h3 class="guller-content"><a href="#">Service</a></h3>
-                        <h3 class="guller-content"><a href="#">Partners</a></h3>
-                        <h3 class="guller-content"><a href="#">Contact</a></h3>
+                        <h3 class="guller-content"><a href="#About">About</a></h3>
+                        <h3 class="guller-content"><a href="#News">News</a></h3>
+                        <h3 class="guller-content"><a href="#Service">Service</a></h3>
+                        <h3 class="guller-content"><a href="#Partners">Partners</a></h3>
+                        <h3 class="guller-content"><a href="#Contact">Contact</a></h3>
                     </div>
                     <span class="border-bottom-0"></span>
                 </div>
@@ -136,7 +161,7 @@
             <div class="container pt-5">
                 <div class="row row-customer">
                     <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 col-horder1">
-                        <h2 class="text-center pt-5">About</h2>
+                        <h2 id="area1" class="text-center pt-5">About</h2>
                         <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -167,7 +192,7 @@
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">About</h1>
+                        <h1 id="About" class="text-center pt-5">About</h1>
                         <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
@@ -183,7 +208,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-horder1" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">New</h1>
+                        <h1 id="News" class="text-center pt-5">News</h1>
                         <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
@@ -212,7 +237,7 @@
     <div class="container-fluid">
     
         <div>
-        <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
+        <h1 id="Service" class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
         </div>
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
@@ -274,7 +299,7 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 col-horder1">
-          <h2 class="text-center pt-5">Contant</h2>
+          <h2  id="area3" class="text-center pt-5">Contant</h2>
             <p class="text-center text-break mt-4 pt-3 col-horder2">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
     <div class="text-center">
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -301,6 +326,9 @@
       </div>
     </div>
     </footer>
+
+
+        
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
