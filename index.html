@@ -110,36 +110,14 @@
             }
         </style>
 <script>
-$(function(){
 
-   // 偵聽a click
-   $(".guller-content a").bind("click",function(){
-
-       var id=$(this).attr("data-id");
-
-       // 取得目標區塊的y座標
-       var target_top = $("#"+id).offset().top;
-
-       // 取得body物件 這種寫法在各瀏覽器上最保險
-       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-
-       // 移動捲軸無動畫效果
-     		//$body.scrollTop(target_top);
-
-       // 移動捲軸有動畫效果
-     		$body.animate({
-     			  scrollTop: target_top
-     		}, 800);
-
-   })
-})
 </script>
     </head>
 
     <body>
 
         <header class="min-vh-20">
-            <div class="container-fluid pt-5 ">
+            <div class="container pt-5 ">
                 <div class="row  guller1-center">
                     <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7">
                         <h1 class="guller-head">公司標誌</h1>
@@ -186,7 +164,7 @@ $(function(){
 
 
         <section class="min-vh-50 mt-5 pt-5">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-no-gutters" style="padding-left:0px; padding-right:0px;">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
@@ -205,7 +183,7 @@ $(function(){
 
 
         <section class="min-vh-50">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-horder1" style="padding-left:0px; padding-right:0px;">
                         <h1 id="News" class="text-center pt-5">News</h1>
@@ -234,7 +212,7 @@ $(function(){
     
     
     <section class="min-vh-100">
-    <div class="container-fluid">
+    <div class="container">
     
         <div>
         <h1 id="Service" class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
@@ -266,7 +244,7 @@ $(function(){
      
     
     <section class="min-vh-100 bg-primary">
-    <div class="container-fluid">
+    <div class="container">
     
         <div>
         <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
