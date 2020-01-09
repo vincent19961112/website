@@ -15,40 +15,17 @@
             html {
                 font-size: 1rem;
             }
-            
-            @include media-breakpoint-up(sm) {
-                html {
-                    font-size: 1.2rem;
-                }
-            }
-            
-            @include media-breakpoint-up(md) {
-                html {
-                    font-size: 1.4rem;
-                }
-            }
-            
-            @include media-breakpoint-up(lg) {
-                html {
-                    font-size: 1.6rem;
-                }
-            }
-            
-            @include media-breakpoint-up(xl) {
-                html {
-                    font-size: 1.8rem;
-                }
-            }
-            
-            header {
-                min-height: 20vh;
-            }
-            
+
             footer {
                 min-height: 20vh;
                 background-color: #f9f9f9;
             }
-            
+            .border{
+                border-bottom:1px solid black;
+            }
+            .text-end{
+                text-align: end;
+            }
             .text-break {
                 word-break: break-all;
             }
@@ -59,15 +36,7 @@
                 height: 200px;
             }
             
-            .footer-section {
-                height: 80vh;
-            }
-            
-            .header-section {
-                height: 80vh;
-            }
-            
-            .d-flex1 {
+            .d-flex-r {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -96,34 +65,77 @@
                     margin-top: 50px;
                 }
             }
+            .container-padding-0{
+                padding-left:0px; 
+                padding-right:0px;
+            }
+            .img-fluid{
+                display:inline-block;
+                max-height: 100%;
+            }
+            .verticalh-10{
+                min-height:10vh;
+            }
+            .verticalh-15{
+                min-height:15vh;
+            }
+            .verticalh-20{
+                min-height:20vh;    
+            }
+            .verticalh-30{
+                min-height:30vh;
+            }
+            .verticalh-50 {
+                min-height: 50vh;
+            }
+            .verticalh-80 {
+                min-height: 80vh;
+            }
+            .verticalh-100 {
+                min-height: 100vh;
+            }
+            .vertical-center{
+                align-items:center;
+            }
+            .vertical-start{
+                align-items:start;
+            }
+            .justify-content{
+                justify-content: center;
+            } 
+            .width-100{
+                width: 100vw;
+            }
+            .white{
+                color:white;
+            }
         </style>
 
     </head>
 
     <body>
-
-        <header class="vh-25">
-            <div class="container-fluid pt-5 ">
-                <div class="row ">
-                    <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 ">
+<header>
+            <div class="container-fluid verticalh-20">
+                <div class="row verticalh-20 vertical-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h1 class="text-767-center">公司標誌</h1>
                     </div>
-                    <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 d-flex1">
-                        <h3 class="text-767-center"><a href="#">About</a></h3>
-                        <h3 class="text-767-center"><a href="#">News</a></h3>
-                        <h3 class="text-767-center"><a href="#">Service</a></h3>
-                        <h3 class="text-767-center"><a href="#">Partners</a></h3>
-                        <h3 class="text-767-center"><a href="#">Contact</a></h3>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex-r">
+                        <h3 class="text-767-center"><a href="#About">About</a></h3>
+                        <h3 class="text-767-center"><a href="#News">News</a></h3>
+                        <h3 class="text-767-center"><a href="#Service">Service</a></h3>
+                        <h3 class="text-767-center"><a href="#Partners">Partners</a></h3>
+                        <h3 class="text-767-center"><a href="#Contact">Contact</a></h3>
                     </div>
                 </div>
             </div>
-        </header>
-        <hr>
-        <section class="header-section">
-            <div class="container pt-5">
-                <div class="row header-767">
+       </header>
+            <div class="border"> </div>
+        <section>
+            <div class="container verticalh-80">
+                <div class="row verticalh-80 vertical-center header-767">
                     <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 card-767-height">
-                        <h2 class="text-center pt-5">About</h2>
+                        <h2 id="About" class="text-center pt-5">About</h2>
                         <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -139,44 +151,35 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-        <section class="min-vh-50 mt-5 pt-5 header-767-margin">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="padding-left:0px; padding-right:0px;">
+        <section class=" header-767-margin">
+            <div class="container-fluid ">
+                <div class="row vertical-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">About</h1>
-                        <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
+                        <h1 class="text-center">About</h1>
+                        <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
 
                     </div>
-                </div>
             </div>
         </section>
 
 
-        <section class="min-vh-50  header-767-margin">
+        <section class="header-767-margin">
             <div class="container-fluid">
-                <div class="row header-767">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">New</h1>
-                        <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
+                <div class="row vertical-center header-767">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0" >
+                        <h1 id="News" class="text-center pt-5">News</h1>
+                        <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="padding-left:0px; padding-right:0px;">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
@@ -185,40 +188,39 @@
             </div>
             </div>
 
-            <div>
-                <i><i>
-        <h3 class="pt-3 pb-3 bg-dark text-center">Read the full news</h3>
-    </div>
-    
+            <div class="pt-3 pb-3 bg-dark verticalh-10 d-flex-r justify-content">
+               <div class="vertical-center ">
+        <h3 class="white text-center">Read the full news</h3>
+            </div>
+        </div>    
     </section>
     
     
     
     
-    <section class="min-vh-100">
-    <div class="container-fluid">
-    
-        <div>
-        <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
+    <section class="verticalh-80">
+    <div class="container-fluid verticalh-80">
+        <div class="verticalh-30 d-flex-r vertical-center justify-content">
+        <h1 id="Service">Service</h1>
         </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
+      <div class="row verticalh-100 vertical-start">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
            <div class="text-center">
             <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
         </div>
-            <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+            <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
         </div> 
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div class="text-center">
              <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
          </div>
-             <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+             <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
          </div> 
-         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
+         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div class="text-center">
              <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
          </div>
-             <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+             <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
          </div> 
       </div>
     </div>
@@ -227,14 +229,14 @@
     </section>
      
     
-    <section class="min-vh-100 bg-primary">
-    <div class="container-fluid">
+    <section class="verticalh-100 bg-primary">
+    <div class="container-fluid verticalh-70">
     
-        <div>
-        <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
+        <div class="verticalh-30 d-flex-r vertical-center justify-content">
+        <h1 id="Partners">Partners</h1>
         </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3 text-right">
+      <div class="row verticalh-70 vertical-center">
+        <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
            <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
         
         </div> 
@@ -242,12 +244,12 @@
          <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
          
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3 text-right">
-         <img src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid img-circle">  
+        <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+         <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">  
         
         </div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-         <img src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid img-circle">  
+        <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">   
         
         </div>
     
@@ -257,30 +259,31 @@
     
     </section>
     
-    <section class="bg-dark footer-section">
-    <div class="container pt-5">
-      <div class="row header-767">
-        <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
-          <h2 class="text-center pt-5">Contant</h2>
-            <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-    <div class="text-center">
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    </div>
+    <section class="verticalh-100 bg-dark">
+        <div class="container verticalh-100">
+            <div class="row verticalh-100 vertical-center">
+                
+                <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
+                    <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 card-767-height">
+                    <h2 id="Contact" class="text-center pt-5">Contact</h2>
+                    <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    </div>
+                </div>
             </div>
-        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 text-767-center">
-    <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-            </div>
+
         </div>
-    
         </div>
-      </div>
-    </div>
+        </div>
     </section>
     
     
     
     
-    <footer class="min-vh-15 bg-primary" >
+    <footer class="verticalh-15 bg-primary" >
     <div class="container pt-5">
       <div class="row">
         
