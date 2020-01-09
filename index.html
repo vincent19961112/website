@@ -42,36 +42,13 @@
                 justify-content: space-between;
             }
             
-            @media (max-width: 767px) {
-                .img-767-size {
-                    height: 40vh;
-                    width: 80vw;
-                }
-                .text-767-center {
-                    text-align: center;
-                }
-                .card-767-height {
-                    height: 20vh;
-                }
-                .header-767 {
-                    display: flex;
-                    margin-top: -3rem;
-                    flex-direction: column-reverse;
-                }
-                h3 {
-                    font-size: 20px;
-                }
-                .header-767-margin {
-                    margin-top: 50px;
-                }
-            }
             .container-padding-0{
                 padding-left:0px; 
                 padding-right:0px;
             }
             .img-fluid{
                 display:inline-block;
-                max-height: 100%;
+                max-height: 50rem;
             }
             .verticalh-10{
                 min-height:10vh;
@@ -108,7 +85,30 @@
             }
             .white{
                 color:white;
+            } 
+            @media (max-width: 576px){
+                .text-center-576{
+                    text-align: center;
+                }
             }
+            @media  (max-width: 767px){
+                .text-center-767{
+                    text-align: center;
+                }
+                .order-767-1{
+                    order:2;
+                }
+                .order-767-2{
+                    order:1;
+                }
+            }
+            @media (max-width: 991px) {
+                .text-center-991{
+                    text-align: center;
+                }
+            }
+
+
         </style>
 
     </head>
@@ -117,10 +117,10 @@
 <header>
             <div class="container-fluid verticalh-20">
                 <div class="row verticalh-20 vertical-center">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h1 class="text-767-center">公司標誌</h1>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <h1 class="text-center-576 text-center-767 text-center-991">公司標誌</h1>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex-r">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex-r">
                         <h3 class="text-767-center"><a href="#About">About</a></h3>
                         <h3 class="text-767-center"><a href="#News">News</a></h3>
                         <h3 class="text-767-center"><a href="#Service">Service</a></h3>
@@ -133,15 +133,15 @@
             <div class="border"> </div>
         <section>
             <div class="container verticalh-80">
-                <div class="row verticalh-80 vertical-center header-767">
-                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 card-767-height">
+                <div class="row verticalh-80 vertical-center">
+                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 order-767-1">
                         <h2 id="About" class="text-center pt-5">About</h2>
                         <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 text-767-center">
+                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 order-767-2">
                         <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
@@ -171,15 +171,15 @@
 
         <section class="header-767-margin">
             <div class="container-fluid">
-                <div class="row vertical-center header-767">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0" >
+                <div class="row vertical-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-1" >
                         <h1 id="News" class="text-center pt-5">News</h1>
                         <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-2">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
@@ -264,9 +264,9 @@
             <div class="row verticalh-100 vertical-center">
                 
                 <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
-                    <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 card-767-height">
+                <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
                     <h2 id="Contact" class="text-center pt-5">Contact</h2>
                     <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
                     <div class="text-center">
