@@ -8,14 +8,24 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap 練習</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
         <link rel="stylesheet" type="text/css" href="file:///home/vincent/%E6%96%87%E4%BB%B6/index/fonticon_css/all.css">
 
         <style>
             html {
-                font-size: 1rem;
+                font-size: 30px;
             }
-
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            h3{
+                font-size: 1.0rem;
+            }
+            p{
+                font-size: 18px;
+            }
             footer {
                 min-height: 20vh;
                 background-color: #f9f9f9;
@@ -34,6 +44,10 @@
                 border-radius: 100%;
                 width: 200px;
                 height: 200px;
+            }
+            .move a:hover{
+                color:blueviolet;
+                text-decoration: none;
             }
             
             .d-flex-r {
@@ -86,12 +100,40 @@
             .white{
                 color:white;
             } 
+            .btn{
+                font-size: 0.5rem;
+            }
             @media (max-width: 576px){
+                h1{
+                font-size: 0.5rem;
+                }
+                h2{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 0.125rem;
+                }
+                p{
+                    font-size: 14px;
+                }
+
                 .text-center-576{
                     text-align: center;
                 }
             }
             @media  (max-width: 767px){
+                h1{
+                font-size: 1rem;
+                }
+                h2{
+                    font-size: 0.5rem;
+                }
+                h3{
+                    font-size: 0.25rem;
+                }
+                p{
+                    font-size: 16px;
+                }
                 .text-center-767{
                     text-align: center;
                 }
@@ -103,6 +145,18 @@
                 }
             }
             @media (max-width: 991px) {
+                h1{
+                font-size: 1.5rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+                h3{
+                    font-size: 0.5rem;
+                }
+                p{
+                    font-size: 18px;
+                }
                 .text-center-991{
                     text-align: center;
                 }
@@ -110,6 +164,7 @@
 
 
         </style>
+
 
     </head>
 
@@ -121,11 +176,11 @@
                         <h1 class="text-center-576 text-center-767 text-center-991">公司標誌</h1>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex-r">
-                        <h3 class="text-767-center"><a href="#About">About</a></h3>
-                        <h3 class="text-767-center"><a href="#News">News</a></h3>
-                        <h3 class="text-767-center"><a href="#Service">Service</a></h3>
-                        <h3 class="text-767-center"><a href="#Partners">Partners</a></h3>
-                        <h3 class="text-767-center"><a href="#Contact">Contact</a></h3>
+                        <h3 class="move text-767-center"><a href="#About">About</a></h3>
+                        <h3 class="move text-767-center"><a href="#News">News</a></h3>
+                        <h3 class="move text-767-center"><a href="#Service">Service</a></h3>
+                        <h3 class="move text-767-center"><a href="#Partners">Partners</a></h3>
+                        <h3 class="move text-767-center"><a href="#Contact">Contact</a></h3>
                     </div>
                 </div>
             </div>
@@ -158,7 +213,7 @@
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
-                        <h1 class="text-center">About</h1>
+                        <h2 class="text-center">About</h2>
                         <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
@@ -173,7 +228,7 @@
             <div class="container-fluid">
                 <div class="row vertical-center">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-1" >
-                        <h1 id="News" class="text-center pt-5">News</h1>
+                        <h2 id="News" class="text-center pt-5">News</h2>
                         <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
@@ -201,7 +256,7 @@
     <section class="verticalh-80">
     <div class="container-fluid verticalh-80">
         <div class="verticalh-30 d-flex-r vertical-center justify-content">
-        <h1 id="Service">Service</h1>
+        <h2 id="Service">Service</h2>
         </div>
       <div class="row verticalh-100 vertical-start">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -233,7 +288,7 @@
     <div class="container-fluid verticalh-70">
     
         <div class="verticalh-30 d-flex-r vertical-center justify-content">
-        <h1 id="Partners">Partners</h1>
+        <h2 id="Partners">Partners</h2>
         </div>
       <div class="row verticalh-70 vertical-center">
         <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
@@ -286,12 +341,29 @@
     <footer class="verticalh-15 bg-primary" >
     <div class="container pt-5">
       <div class="row">
-        
+       <a href="#">1111111111111111</a> 
     
       </div>
     </div>
     </footer>
     
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $('.move').on('click',function(){
+                    var linkPosition =$(this).attr('href');
+                $('body,html').animate({
+                    scrollTop : $(linkPosition).position().top},600);
+                    return false;
+                });
+          });
+    
+        </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
