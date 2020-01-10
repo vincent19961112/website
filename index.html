@@ -7,169 +7,247 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap 練習</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="file:///home/vincent/%E6%96%87%E4%BB%B6/index/fonticon_css/all.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+            href="file:///home/vincent/%E6%96%87%E4%BB%B6/index/fonticon_css/all.css">
 
         <style>
             html {
                 font-size: 30px;
             }
-            h1{
+
+            h1 {
                 font-size: 2rem;
             }
-            h2{
+
+            h2 {
                 font-size: 1.5rem;
             }
-            h3{
+
+            h3 {
                 font-size: 1.0rem;
             }
-            p{
+
+            p {
                 font-size: 18px;
             }
+
             footer {
                 min-height: 20vh;
                 background-color: #f9f9f9;
             }
-            .border{
-                border-bottom:1px solid black;
+
+            .border {
+                border-bottom: 1px solid black;
             }
-            .text-end{
+
+            .text-end {
                 text-align: end;
             }
+
             .text-break {
                 word-break: break-all;
             }
-            
+
             .img-circle {
                 border-radius: 100%;
                 width: 200px;
                 height: 200px;
             }
-            .move a:hover{
-                color:blueviolet;
+
+            .move a:hover {
+                color: blueviolet;
                 text-decoration: none;
             }
-            
+
             .d-flex-r {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
             }
-            
-            .container-padding-0{
-                padding-left:0px; 
-                padding-right:0px;
+
+            .container-padding-0 {
+                padding-left: 0px;
+                padding-right: 0px;
             }
-            .img-fluid{
-                display:inline-block;
+
+            .img-fluid {
+                display: inline-block;
                 max-height: 50rem;
             }
-            .verticalh-10{
-                min-height:10vh;
+
+            .verticalh-10 {
+                min-height: 10vh;
             }
-            .verticalh-15{
-                min-height:15vh;
+
+            .verticalh-15 {
+                min-height: 15vh;
             }
-            .verticalh-20{
-                min-height:20vh;    
+
+            .verticalh-20 {
+                min-height: 20vh;
             }
-            .verticalh-30{
-                min-height:30vh;
+
+            .verticalh-30 {
+                min-height: 30vh;
             }
+
             .verticalh-50 {
                 min-height: 50vh;
             }
+
             .verticalh-80 {
                 min-height: 80vh;
             }
+
             .verticalh-100 {
                 min-height: 100vh;
             }
-            .vertical-center{
-                align-items:center;
+
+            .vertical-center {
+                align-items: center;
             }
-            .vertical-start{
-                align-items:start;
+
+            .vertical-start {
+                align-items: start;
             }
-            .justify-content{
+
+            .justify-content {
                 justify-content: center;
-            } 
-            .width-100{
+            }
+
+            .width-100 {
                 width: 100vw;
             }
-            .white{
-                color:white;
-            } 
-            .btn{
+
+            .white {
+                color: white;
+            }
+
+            .btn {
                 font-size: 0.5rem;
             }
-            @media (max-width: 576px){
-                h1{
-                font-size: 0.5rem;
+
+            @media (max-width: 576px) {
+                h1 {
+                    font-size: 0.5rem;
                 }
-                h2{
+
+                h2 {
                     font-size: 30px;
                 }
-                h3{
+
+                h3 {
                     font-size: 0.125rem;
                 }
-                p{
+
+                p {
                     font-size: 14px;
                 }
 
-                .text-center-576{
+                .text-center-576 {
                     text-align: center;
                 }
             }
-            @media  (max-width: 767px){
-                h1{
-                font-size: 1rem;
-                }
-                h2{
-                    font-size: 0.5rem;
-                }
-                h3{
-                    font-size: 0.25rem;
-                }
-                p{
-                    font-size: 16px;
-                }
-                .text-center-767{
-                    text-align: center;
-                }
-                .order-767-1{
-                    order:2;
-                }
-                .order-767-2{
-                    order:1;
-                }
-            }
-            @media (max-width: 991px) {
-                h1{
-                font-size: 1.5rem;
-                }
-                h2{
+
+            @media (max-width: 767px) {
+                h1 {
                     font-size: 1rem;
                 }
-                h3{
+
+                h2 {
                     font-size: 0.5rem;
                 }
-                p{
+
+                h3 {
+                    font-size: 0.25rem;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .text-center-767 {
+                    text-align: center;
+                }
+
+                .order-767-1 {
+                    order: 2;
+                }
+
+                .order-767-2 {
+                    order: 1;
+                }
+            }
+
+            @media (max-width: 991px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                h3 {
+                    font-size: 0.5rem;
+                }
+
+                p {
                     font-size: 18px;
                 }
-                .text-center-991{
+
+                .text-center-991 {
                     text-align: center;
                 }
             }
 
+            #BOX {
+                width: 50px;
+                height: 50px;
+                background-color: #9CF;
+                -webkit-transition: all 5s ease-out;
+            }
 
+            #BOX:hover {
+                width: 50px;
+                height: 50px;
+                -webkit-transform: rotateY(360deg);
+                -webkit-transform: rotate(360deg);
+                color:black;
+            }
+
+            h1 {
+                font-size: 60px;
+                text-align: center;
+                color: #FFF;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #000;
+                color: #FFF;
+                padding: 18px 24px;
+                border-radius: 50%;
+            }
+
+            .to-top:hover {
+                background: #d7d7d7;
+                color: #000;
+            }
         </style>
 
 
     </head>
 
     <body>
-<header>
+        <a href="#top" class="to-top"><i class="far fa-hand-point-up"></i></a>
+        <header>
             <div class="container-fluid verticalh-20">
                 <div class="row verticalh-20 vertical-center">
                     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -184,20 +262,22 @@
                     </div>
                 </div>
             </div>
-       </header>
-            <div class="border"> </div>
+        </header>
+        <div class="border"> </div>
         <section>
             <div class="container verticalh-80">
                 <div class="row verticalh-80 vertical-center">
                     <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 order-767-1">
                         <h2 id="About" class="text-center">About</h2>
-                        <p class="text-center text-break mt-4">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
+                        <p class="text-center text-break mt-4">Type something Type<br>something Type<br>something
+                            Type<br>something Type<br>somethingType<br>something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 order-767-2">
-                        <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid img-767-size"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
 
@@ -210,32 +290,36 @@
             <div class="container-fluid ">
                 <div class="row vertical-center">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0">
                         <h2 class="text-center">About</h2>
-                        <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
+                        <p class="text-center text-break">Type something Type something<br>Type something Type
+                            something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
 
                     </div>
-            </div>
+                </div>
         </section>
 
 
         <section class="header-767-margin">
             <div class="container-fluid">
                 <div class="row vertical-center">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-1" >
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-1">
                         <h2 id="News" class="text-center">News</h2>
-                        <p class="text-center text-break">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
+                        <p class="text-center text-break">Type something Type something<br>Type something Type
+                            something<br>Type somethingType something</p>
                         <div class="text-center">
                             <button type="button" class="btn btn-outline-secondary">more</button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 container-padding-0 order-767-2">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                 </div>
 
@@ -244,130 +328,154 @@
             </div>
 
             <div class="pt-3 pb-3 bg-dark verticalh-10 d-flex-r justify-content">
-               <div class="vertical-center ">
-        <h3 class="white text-center">Read the full news</h3>
-            </div>
-        </div>    
-    </section>
-    
-    
-    
-    
-    <section class="verticalh-80">
-    <div class="container-fluid verticalh-80">
-        <div class="verticalh-30 d-flex-r vertical-center justify-content">
-        <h2 id="Service">Service</h2>
-        </div>
-      <div class="row verticalh-100 vertical-start">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-           <div class="text-center">
-            <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-        </div>
-            <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-        </div> 
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="text-center">
-             <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         </div>
-             <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-         </div> 
-         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="text-center">
-             <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         </div>
-             <p class="text-center text-break">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-         </div> 
-      </div>
-    </div>
-    
-    
-    </section>
-     
-    
-    <section class="verticalh-100 bg-primary">
-    <div class="container-fluid verticalh-70">
-    
-        <div class="verticalh-30 d-flex-r vertical-center justify-content">
-        <h2 id="Partners">Partners</h2>
-        </div>
-      <div class="row verticalh-70 vertical-center">
-        <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
-           <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-        
-        </div> 
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-         <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         
-        </div>
-        <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
-         <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">  
-        
-        </div>
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">   
-        
-        </div>
-    
-      </div>
-    </div>
-    
-    
-    </section>
-    
-    <section class="verticalh-100 bg-dark">
-        <div class="container verticalh-100">
-            <div class="row verticalh-100 vertical-center">
-                
-                <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                <div class="vertical-center ">
+                    <h3 class="white text-center">Read the full news</h3>
                 </div>
-                <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
-                    <h2 id="Contact" class="text-center">Contact</h2>
-                    <p class="text-center text-break mt-4">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            </div>
+        </section>
+
+
+
+
+        <section class="verticalh-80">
+            <div class="container-fluid verticalh-80">
+                <div class="verticalh-30 d-flex-r vertical-center justify-content">
+                    <h2 id="Service">Service</h2>
+                </div>
+                <div class="row verticalh-100 vertical-start">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center">
+                            <img class="img-fluid img-circle"
+                                src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        </div>
+                        <p class="text-center text-break">Type something Type<br>something Type<br>something
+                            Type<br>something Type<br>somethingType<br>something</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center">
+                            <img class="img-fluid img-circle"
+                                src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        </div>
+                        <p class="text-center text-break">Type something Type<br>something Type<br>something
+                            Type<br>something Type<br>somethingType<br>something</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="text-center">
+                            <img class="img-fluid img-circle"
+                                src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        </div>
+                        <p class="text-center text-break">Type something Type<br>something Type<br>something
+                            Type<br>something Type<br>somethingType<br>something</p>
                     </div>
                 </div>
             </div>
 
-        </div>
-        </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    <footer class="verticalh-15 bg-primary" >
-    <div class="container pt-5">
-      <div class="row">
-       <a href="#">1111111111111111</a> 
-    
-      </div>
-    </div>
-    </footer>
-    
+
+        </section>
+
+
+        <section class="verticalh-100 bg-primary">
+            <div class="container-fluid verticalh-70">
+
+                <div class="verticalh-30 d-flex-r vertical-center justify-content">
+                    <h2 id="Partners">Partners</h2>
+                </div>
+                <div class="row verticalh-70 vertical-center">
+                    <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1562886812-41775a01195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1562886812-41775a01195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+
+                    </div>
+                    <div class="text-end col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1562886812-41775a01195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <img id="img1" class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img id="img2" class="img-fluid img-circle"
+                            src="https://images.unsplash.com/photo-1562886812-41775a01195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="verticalh-100 bg-dark">
+            <div class="container verticalh-100">
+                <div class="row verticalh-100 vertical-center">
+
+                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7">
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
+                        <h2 id="Contact" class="text-center">Contact</h2>
+                        <p class="text-center text-break mt-4">Type something Type<br>something Type<br>something
+                            Type<br>something Type<br>somethingType<br>something</p>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="verticalh-15 bg-primary">
+            <div class="container verticalh-15">
+                <div class="row verticalh-15 justify-content vertical-center">
+                    <div id="BOX">
+                        <h5>fly</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-                $('.move').on('click',function(){
-                    var linkPosition =$(this).attr('href');
-                $('body,html').animate({
-                    scrollTop : $(linkPosition).position().top},600);
-                    return false;
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#img1").click(function () {
+                    $("#img2").toggle(1000);
                 });
-          });
-    
+            });
+
         </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
     </body>
-    
+
     </html>
