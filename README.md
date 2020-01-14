@@ -8,6 +8,6 @@
 <h3>JQuery官網</h3>
 <p><a href="https://jquery.com/">JQuery</a><p>   
 <h3>VScode快打</h3>
-<p><a href=" https://www.cnblogs.com/summit7ca/p/6944215.html">Vscode</a><p> 
+<p><a href=" https://www.cnblogs.com/summit7ca/p/6944215">Vscode</a><p> 
   
 結果:https://vincent19961112.github.io/website/
