@@ -7,292 +7,236 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap 練習</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-        <link rel="stylesheet" type="text/css" href="file:///home/vincent/%E6%96%87%E4%BB%B6/index/fonticon_css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <style>
-            html {
-                font-size: 1rem;
+            .narbarheader {
+                padding: 2rem 1rem;
+                border-bottom: 1px solid;
             }
             
-            @include media-breakpoint-up(sm) {
-                html {
-                    font-size: 1.2rem;
+            .page1topbottom {
+                margin-top: 47px;
+                margin-bottom: 80px;
+            }
+            
+            .page2topbottom {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            .img-padding {
+                padding: 40px;
+            }
+            
+            .img-padding4 {
+                padding: 20px;
+            }
+            
+            .container4 {
+                padding: 30px 170px 50px 170px;
+            }
+            
+            @media (max-width: 576px) {
+                .custom-order1 {
+                    order: 2;
+                }
+                .custom-order2 {
+                    order: 1;
                 }
             }
             
-            @include media-breakpoint-up(md) {
-                html {
-                    font-size: 1.4rem;
+            @media (max-width: 768px) {
+                .custom-order1 {
+                    order: 2;
+                }
+                .custom-order2 {
+                    order: 1;
                 }
             }
             
-            @include media-breakpoint-up(lg) {
-                html {
-                    font-size: 1.6rem;
-                }
-            }
+            @media (min-width: 992px) {}
             
-            @include media-breakpoint-up(xl) {
-                html {
-                    font-size: 1.8rem;
-                }
-            }
-            
-            header {
-                min-height: 20vh;
-            }
-            
-            footer {
-                min-height: 20vh;
-                background-color: #f9f9f9;
-            }
-            
-            .text-break {
-                word-break: break-all;
-            }
-            
-            .img-circle {
-                border-radius: 100%;
-                width: 200px;
-                height: 200px;
-            }
-            
-            .footer-section {
-                height: 80vh;
-            }
-            
-            .header-section {
-                height: 80vh;
-            }
-            
-            .d-flex1 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            
-            @media (max-width: 767px) {
-                .img-767-size {
-                    height: 40vh;
-                    width: 80vw;
-                }
-                .text-767-center {
-                    text-align: center;
-                }
-                .card-767-height {
-                    height: 20vh;
-                }
-                .header-767 {
-                    display: flex;
-                    margin-top: -3rem;
-                    flex-direction: column-reverse;
-                }
-                h3 {
-                    font-size: 20px;
-                }
-                .header-767-margin {
-                    margin-top: 50px;
-                }
-            }
+            @media (min-width: 1200px) {}
         </style>
+
 
     </head>
 
     <body>
-
-        <header class="vh-25">
-            <div class="container-fluid pt-5 ">
-                <div class="row ">
-                    <div class="col-sm-12 col-md-3 col-lg-6 col-xl-7 ">
-                        <h1 class="text-767-center">公司標誌</h1>
-                    </div>
-                    <div class="col-sm-12 col-md-9 col-lg-6 col-xl-5 d-flex1">
-                        <h3 class="text-767-center"><a href="#">About</a></h3>
-                        <h3 class="text-767-center"><a href="#">News</a></h3>
-                        <h3 class="text-767-center"><a href="#">Service</a></h3>
-                        <h3 class="text-767-center"><a href="#">Partners</a></h3>
-                        <h3 class="text-767-center"><a href="#">Contact</a></h3>
+        <!-- navbar 開始 -->
+        <section class="container-fliud">
+            <div class="narbarheader navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <h1>公司標誌</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </header>
-        <hr>
-        <section class="header-section">
-            <div class="container pt-5">
-                <div class="row header-767">
-                    <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 card-767-height">
-                        <h2 class="text-center pt-5">About</h2>
-                        <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 text-767-center">
-                        <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            </div>
         </section>
+        <!-- navbar 結束 -->
 
 
 
-
-
-
-
-
-
-        <section class="min-vh-50 mt-5 pt-5 header-767-margin">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="padding-left:0px; padding-right:0px;">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+        <!-- page1 開始 -->
+        <section class="container page1topbottom">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center custom-order1">
+                    <div>
+                        <h2>About</h2>
+                        <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                        </p>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">About</h1>
-                        <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-outline-secondary">more</button>
-                        </div>
-
-                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 custom-order2">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
                 </div>
             </div>
         </section>
+        <!-- page1 結束 -->
 
 
-        <section class="min-vh-50  header-767-margin">
-            <div class="container-fluid">
-                <div class="row header-767">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding-left:0px; padding-right:0px;">
-                        <h1 class="text-center pt-5">New</h1>
-                        <p class="text-center text-break pt-3">Type something Type something<br>Type something Type something<br>Type somethingType something</p>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-outline-secondary">more</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="padding-left:0px; padding-right:0px;">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-                    </div>
+
+        <!-- page2 開始 -->
+        <section>
+            <div class="row align-items-center no-gutters">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579041925185-d9cf639bc86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                    <h2>About</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    </p>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>
+            </div>
+            <div class="row align-items-center no-gutters">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center custom-order1">
+                    <h2>About</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    </p>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 custom-order2">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579097273874-d7857a3996b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+                </div>
+            </div>
+            <div class="bg-dark text-white text-center page2topbottom">
+                <h2>Read the full news</h2>
+            </div>
+        </section>
+        <!-- page2 結束 -->
 
-            </div>
-            </div>
-            </div>
 
+
+        <!-- page3 開始 -->
+        <section>
             <div>
-                <i><i>
-        <h3 class="pt-3 pb-3 bg-dark text-center">Read the full news</h3>
-    </div>
-    
-    </section>
-    
-    
-    
-    
-    <section class="min-vh-100">
-    <div class="container-fluid">
-    
-        <div>
-        <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
-        </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
-           <div class="text-center">
-            <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-        </div>
-            <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-        </div> 
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
-            <div class="text-center">
-             <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         </div>
-             <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-         </div> 
-         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-3 pr-3">
-            <div class="text-center">
-             <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         </div>
-             <p class="text-center text-break pt-3 pl-5 pr-5">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-         </div> 
-      </div>
-    </div>
-    
-    
-    </section>
-     
-    
-    <section class="min-vh-100 bg-primary">
-    <div class="container-fluid">
-    
-        <div>
-        <h1 class="text-center mt-5 pt-5 mb-5 pb-5">Service</h1>
-        </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3 text-right">
-           <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-        
-        </div> 
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-         <img class="img-fluid img-circle" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-         
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3 text-right">
-         <img src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid img-circle">  
-        
-        </div>
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-         <img src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid img-circle">  
-        
-        </div>
-    
-      </div>
-    </div>
-    
-    
-    </section>
-    
-    <section class="bg-dark footer-section">
-    <div class="container pt-5">
-      <div class="row header-767">
-        <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5">
-          <h2 class="text-center pt-5">Contant</h2>
-            <p class="text-center text-break mt-4 pt-3">Type something Type<br>something Type<br>something Type<br>something Type<br>somethingType<br>something</p>
-    <div class="text-center">
-    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-    </div>
+                <h2 class="text-center mt-5 mb-5">Service</h2>
             </div>
-        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-7 text-767-center">
-    <img class="img-fluid img-767-size" src="https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <div class="row no-gutters">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4  text-center">
+                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1579069260854-450fadfff665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <h2>About</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    </p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1579098964409-3c172c60dd71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <h2>About</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    </p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center mb-5">
+                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1578848548628-ccd5ce1196b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <h2>About</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    </p>
+                </div>
             </div>
-        </div>
-    
-        </div>
-      </div>
-    </div>
-    </section>
-    
-    
-    
-    
-    <footer class="bg-primary" >
-    <div class="container pt-5">
-      <div class="row">
-        
-    
-      </div>
-    </div>
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
+        </section>
+        <!-- page3 結束 -->
+
+
+
+
+        <!-- page4 開始 -->
+        <section class="bg-primary">
+            <div class="pt-5">
+                <h2 class="text-center">Service</h2>
+            </div>
+            <div class="container4">
+                <div class="row no-gutters">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6  text-center">
+                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579113563802-49248d5d63d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579041925709-798d7d0fed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6  text-center">
+                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579093421040-3b1546f48993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579101814387-fdef57cb12d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- page4 結束 -->
+
+        <!-- page5 開始 -->
+        <section class="container page1topbottom">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center">
+                    <div>
+                        <h2>About</h2>
+                        <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                        </p>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page5 結束 -->
+
+
+        <footer class="bg-dark">
+            <div class="text-center mt-5">
+                <h2>footer</h2>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-    
+
     </html>
