@@ -13,5 +13,6 @@
 <p><a href="https://fonts.google.com/">Google Font</a><p>   
 <h3>男丁格爾</h3>
 <p><a href="http://abgne.tw/jquery/apply-jquery/jquery-nike-gallery.html">男丁格爾</a><p>     
-  
+ <h3>cubic-bezier</h3>
+<p><a href="  https://cubic-bezier.com/#.17,.67,.83,.67">cubic-bezier</a><p>   
 結果:https://vincent19961112.github.io/website/
