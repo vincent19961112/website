@@ -7,58 +7,76 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap 練習</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
         <style>
             .narbarheader {
                 padding: 2rem 1rem;
                 border-bottom: 1px solid;
             }
-            
+
             .img-padding {
                 padding: 40px;
             }
-            
+
             .img-padding4 {
                 padding: 20px;
             }
-            .padding-bottom{
-                margin-bottom:0px;
-            }    
+
+            .padding-bottom {
+                margin-bottom: 0px;
+            }
+
+            .facebook {
+                text-decoration: none;
+            }
+
+            .facebook a:hover {
+                color: rgb(69, 69, 241);
+            }
+
+            .footer-ul li {
+                list-style-type: none;
+            }
+
             @media (max-width: 576px) {
                 .custom-order1 {
                     order: 2;
                 }
+
                 .custom-order2 {
                     order: 1;
                 }
             }
-            
+
             @media (max-width: 768px) {
                 .custom-order1 {
                     order: 2;
                 }
+
                 .custom-order2 {
                     order: 1;
                 }
-                .page-height{
+
+                .page-height {
                     min-height: 550px;
                 }
             }
-            
+
             @media (max-width: 992px) {
-                .page-height{
+                .page-height {
                     min-height: 600px;
                 }
             }
-            
+
             @media (max-width: 1200px) {
-                .page-height{
+                .page-height {
                     min-height: 700px;
                 }
             }
+
             @media (min-width: 1200px) {
-                .page-height{
+                .page-height {
                     min-height: 700px;
                 }
             }
@@ -75,25 +93,27 @@
                     <a class="navbar-brand" href="#">
                         <h1>公司標誌</h1>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> About</a>
+                                <a class="nav-link" href="#About"> About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> News</a>
+                                <a class="nav-link" href="#News"> News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Service</a>
+                                <a class="nav-link" href="#Service"> Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Partners</a>
+                                <a class="nav-link" href="#Partners"> Partners</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> Contact</a>
+                                <a class="nav-link" href="#Contact"> Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -104,37 +124,41 @@
 
 
         <!-- page1 開始 -->
-        <section class="page-height bg-dark pt-5 pb-5">
+        <section id="About" class="page-height bg-dark pt-5 pb-5">
             <div class="container">
                 <div class="page-height row align-items-center align-content-center">
                     <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center custom-order1">
                         <div>
                             <h2>About</h2>
-                            <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                            <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                                somethingType<br>something
                             </p>
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 custom-order2">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
                     </div>
                 </div>
             </div>
 
-        </section>
+        </section id="About">
         <!-- page1 結束 -->
 
 
 
         <!-- page2 開始 -->
-        <section class="page-height">
+        <section id="News" class="page-height">
             <div class="bg-primary row align-items-center no-gutters">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579041925185-d9cf639bc86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1579041925185-d9cf639bc86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-                    <h2>About</h2>
-                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    <h2>News</h2>
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                        somethingType<br>something
                     </p>
                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
                 </div>
@@ -142,87 +166,101 @@
             <div class="row align-items-center no-gutters">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center custom-order1">
                     <h2>About</h2>
-                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                        somethingType<br>something
                     </p>
                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 custom-order2">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579097273874-d7857a3996b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1579097273874-d7857a3996b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
                 </div>
             </div>
-                <h2 class="bg-dark text-white text-center  padding-bottom">Read the full news</h2>
-        </section>
+            <h2 class="bg-dark text-white text-center  padding-bottom">Read the full news</h2>
+        </section id="News">
         <!-- page2 結束 -->
 
 
-      <!-- page3 開始 -->
-        <section class="page-height bg-dark">
+        <!-- page3 開始 -->
+        <section id="Service" class="page-height bg-dark">
             <div class="row no-gutters align-content-center">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5 text-center">
-                    <h2 class="">Service</h2>
+                    <h2>Service</h2>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1579069260854-450fadfff665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <img class="img-fluid rounded-circle img-padding"
+                        src="https://images.unsplash.com/photo-1579069260854-450fadfff665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     <h2>About</h2>
-                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                        somethingType<br>something
                     </p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1579098964409-3c172c60dd71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <img class="img-fluid rounded-circle img-padding"
+                        src="https://images.unsplash.com/photo-1579098964409-3c172c60dd71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     <h2>About</h2>
-                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                        somethingType<br>something
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mb-5">
-                    <img class="img-fluid rounded-circle img-padding" src="https://images.unsplash.com/photo-1578848548628-ccd5ce1196b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                    <img class="img-fluid rounded-circle img-padding"
+                        src="https://images.unsplash.com/photo-1578848548628-ccd5ce1196b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     <h2>About</h2>
-                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                    <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                        somethingType<br>something
                     </p>
                 </div>
             </div>
-        </section>
+        </section id="Service">
         <!-- page3 結束 -->
-  
+
 
 
 
 
         <!-- page4 開始 -->
-        <section class="page-height bg-primary">
+        <section id="Partners" class="page-height bg-primary">
             <div class="container4">
                 <div class="row no-gutters align-content-center">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mb-5 text-center">
-                        <h2 class="padding-bottom">Service</h2>
+                        <h2 class="padding-bottom">Partners</h2>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6  text-center">
-                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579113563802-49248d5d63d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid rounded-circle img-padding4"
+                            src="https://images.unsplash.com/photo-1579113563802-49248d5d63d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579041925709-798d7d0fed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid rounded-circle img-padding4"
+                            src="https://images.unsplash.com/photo-1579041925709-798d7d0fed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6  text-center">
-                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579093421040-3b1546f48993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+                        <img class="img-fluid rounded-circle img-padding4"
+                            src="https://images.unsplash.com/photo-1579093421040-3b1546f48993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-                        <img class="img-fluid rounded-circle img-padding4" src="https://images.unsplash.com/photo-1579101814387-fdef57cb12d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
+                        <img class="img-fluid rounded-circle img-padding4"
+                            src="https://images.unsplash.com/photo-1579101814387-fdef57cb12d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
                     </div>
                 </div>
             </div>
 
-        </section>
+        </section id="Contact">
         <!-- page4 結束 -->
 
         <!-- page5 開始 -->
-        <section class="page-height bg-light pt-5 pb-5">
+        <section id="Contact" class="page-height bg-light pt-5 pb-5">
             <div class="container">
                 <div class="page-height row align-items-center align-content-center">
                     <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
+                        <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1579101814434-d87f3bc6f5c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80">
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center">
                         <div>
-                            <h2>About</h2>
-                            <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br> somethingType<br>something
+                            <h2>contact</h2>
+                            <p>Type somethingType<br> somethingType<br> somethingType<br> somethingType<br>
+                                somethingType<br>something
                             </p>
                             <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         </div>
@@ -233,12 +271,87 @@
         <!-- page5 結束 -->
 
 
-      <h2 class="bg-dark text-white text-center padding-bottom">footer</h2>
+
+        <footer class="bg-dark">
+            <h2 class="text-white text-center padding-bottom">footer</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  text-center">
+                        <ul class="footer-ul">
+                            <li class=""><a href="#">1</a></li>
+                            <li class=""><a href="#">2</a></li>
+                            <li class=""><a href="#">3</a></li>
+                            <li class=""><a href="#">4</a></li>
+                            <li class=""><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  text-center">
+                        <ul class="footer-ul">
+                            <li class=""><a href="#">1</a></li>
+                            <li class=""><a href="#">2</a></li>
+                            <li class=""><a href="#">3</a></li>
+                            <li class=""><a href="#">4</a></li>
+                            <li class=""><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3  text-center">
+                        <ul class="footer-ul">
+                            <li class=""><a href="#">1</a></li>
+                            <li class=""><a href="#">2</a></li>
+                            <li class=""><a href="#">3</a></li>
+                            <li class=""><a href="#">4</a></li>
+                            <li class=""><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 facebook  text-right">
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <h3 class="text-center text-white">相關連結</h3>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                                <a href="#"><i class="far fa-envelope fa-3x"></i></a>
+                                <a href="#"><i class="fab fa-youtube fa-3x"></i></i></a>
+                                <a href="#"><i class="fab fa-line fa-3x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+//             var isMobile = false; //initiate as false
+
+//             // device detection
+
+//             if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+
+//                 || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) isMobile = true;
+//             function isMobile() {
+
+//                 try { document.createEvent("TouchEvent"); return true; }
+
+//                 catch (e) { return false; }
+
+//             }
+//             if(isMobile()){....這裡就放入如果是行動裝置的話，要怎麼弄....}
+
+// else{....這裡就放入一般正常裝置的程式碼....}
+        </script>
+
     </body>
 
     </html>
