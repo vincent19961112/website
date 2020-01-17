@@ -2,7 +2,7 @@
 <h3>好用的免費圖庫</h3>
 <p><a href="https://unsplash.com/">Unsplash</a><p> 
 <h3>好用的icon工具</h3>
-<br><h2>cdn-</h2><p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"></p><br>
+<br><h2>cdn-</h2><p>link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"</p><br>
 <p><a href="https://fontawesome.com/icons?d=gallery">Font Awesome</a><p> 
 <h3>Bootstrap4官網</h3>
 <p><a href="https://getbootstrap.com/">bootstrap4</a><p> 
