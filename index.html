@@ -41,12 +41,22 @@
                 .custom-order2 {
                     order: 1;
                 }
+                .page-height{
+                    min-height: 550px;
+                }
             }
             
             @media (max-width: 992px) {
-
+                .page-height{
+                    min-height: 600px;
+                }
             }
             
+            @media (max-width: 1200px) {
+                .page-height{
+                    min-height: 700px;
+                }
+            }
             @media (min-width: 1200px) {
                 .page-height{
                     min-height: 700px;
@@ -59,7 +69,7 @@
 
     <body>
         <!-- navbar 開始 -->
-        <section class="container-fliud">
+        <section class="container-fliud stacky">
             <div class="narbarheader navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
