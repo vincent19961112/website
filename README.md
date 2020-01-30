@@ -21,7 +21,9 @@
 <h3>LeetCode 練習工具</h3>
 <p><a href="https://leetcode.com/">LeetCode</a><p>  
 <h3>Javascript 教學</h3>
-<p><a href="https://courses.wesbos.com/account/access/5e269acdda680247de2ed020/view/194130650>Javascript 教學</a><p>  
+<p><a href="https://courses.wesbos.com/account/access/5e269acdda680247de2ed020/view/194130650>Javascript 教學</a><p>    
 <h3>codepen</h3>
-<p><a href="https://codepen.io/popular/pens/?cursor=ZD0xJm89MCZwPTI=>codepen</a><p>  
+<p><a href="https://codepen.io/popular/pens/?cursor=ZD0xJm89MCZwPTI=">codepen</a><p>  
+<h3>插假圖</h3>
+<p><a href="http://lorempixel.com/">codepen</a><p> 
 結果:https://vincent19961112.github.io/website/
